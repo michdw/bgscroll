@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,
+body {
+    background: #525093;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    -webkit-transition: all .7s;
+    transition: all .7s;
+    min-height: 100%;
+}
+
+
+/*for overlay to cover entire document height*/
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/**/
+
+h1 {
+    font-size: 4em;
+    opacity: .8;
+    margin-bottom: 10px;
+}
+
+.frame {
+    padding-top: 77.5vh;
+    padding-bottom: 2.5vh;
+}
+
+.content {
+    padding-top: 20vh;
+    width: 50vw;
+    margin-left: 10vw;
+}
+
+#overlay {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+}
+
+#f1 {
+    padding-top: 0;
+}
+
+#f5 {
+    padding-bottom: 0;
+}
+
+#c5 {
+    height: 80vh;
+}
+
+#navbar {
+    z-index: 98;
+    position: fixed;
+    margin-left: 80vw;
+    margin-top: 15vh;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+#navbar li {
+    display: block;
+    padding-left: 0.4em;
+    border-left: 3px solid #fff;
+}
+
+#navbar li:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#navbar a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#tonext {
+    position: fixed;
+    margin-left: 70vw;
+    margin-top: 15vh;
+    width: 54px;
+    height: 54px;
+    padding: 3px;
+    opacity: .3;
+    -webkit-transition: opacity 500ms, width 500ms, height 500ms, padding 500ms, -webkit-transform 500ms;
+    transition: opacity 500ms, width 500ms, height 500ms, padding 500ms, -webkit-transform 500ms;
+    transition: transform 500ms, opacity 500ms, width 500ms, height 500ms, padding 500ms;
+    transition: transform 500ms, opacity 500ms, width 500ms, height 500ms, padding 500ms, -webkit-transform 500ms;
+}
+
+#tonext:hover {
+    opacity: .6;
+    width: 58px;
+    height: 58px;
+    padding: 1px;
+}
