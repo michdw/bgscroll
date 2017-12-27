@@ -6,40 +6,40 @@ function changeBgColor(frame) {
 }
 
 $(document).on('scroll', function() {
-  changeBgColor('#f1');
-  changeBgColor('#f2');
-  changeBgColor('#f3');
-  changeBgColor('#f4');
-  changeBgColor('#f5');
-  if ($(document).scrollTop() >= $('#f5').position().top) {
-    $('#tonext').css('transform', 'rotate(180deg)');
+  changeBgColor('.f1');
+  changeBgColor('.f2');
+  changeBgColor('.f3');
+  changeBgColor('.f4');
+  changeBgColor('.f5');
+  if ($(document).scrollTop() >= $('.f5').position().top) {
+    $('.tonext').css('transform', 'rotate(180deg)');
   }
-  if ($(document).scrollTop() < $('#f5').position().top) {
-    $('#tonext').css('transform', 'rotate(0deg)');
+  if ($(document).scrollTop() < $('.f5').position().top) {
+    $('.tonext').css('transform', 'rotate(0deg)');
   }
 });
 
 $(document).ready(function() {
-  $('#overlay').fadeOut();
+  $('.overlay').fadeOut();
 
   // scroll when clicking on arrow
 
-  $('#tonext').click(function() {
-    if ($(document).scrollTop() < $('#f2').position().top) {
+  $('.tonext').click(function() {
+    if ($(document).scrollTop() < $('.f2').position().top) {
       $('html, body').animate({
-          scrollTop: $('#c2').position().top
+          scrollTop: $('.c2').position().top
         }, 200 );
-    } else if ($(document).scrollTop() < $('#f3').position().top) {
+    } else if ($(document).scrollTop() < $('.f3').position().top) {
       $('html, body').animate({
-          scrollTop: $('#c3').position().top
+          scrollTop: $('.c3').position().top
         }, 200 );
-    } else if ($(document).scrollTop() < $('#f4').position().top) {
+    } else if ($(document).scrollTop() < $('.f4').position().top) {
       $('html, body').animate({
-          scrollTop: $('#c4').position().top
+          scrollTop: $('.c4').position().top
         }, 200 );
-    } else if ($(document).scrollTop() < $('#f5').position().top) {
+    } else if ($(document).scrollTop() < $('.f5').position().top) {
       $('html, body').animate({
-          scrollTop: $('#c5').position().top
+          scrollTop: $('.c5').position().top
         }, 200 );
     } else {
       $('html, body').animate({
@@ -52,6 +52,6 @@ $(document).ready(function() {
 
 // scroll back to top on reload
 $(window).on('beforeunload', function() {
-  $('#overlay').show();
+  $('.overlay').show();
   $(this).scrollTop(0);
 });

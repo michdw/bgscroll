@@ -46,7 +46,7 @@ h1 {
     margin-left: 10vw;
 }
 
-#overlay {
+.overlay {
     position: absolute;
     z-index: 99;
     top: 0;
@@ -56,19 +56,19 @@ h1 {
     background: #333;
 }
 
-#f1 {
+.f1 {
     padding-top: 0;
 }
 
-#f5 {
+.f5 {
     padding-bottom: 0;
 }
 
-#c5 {
+.c5 {
     height: 80vh;
 }
 
-#navbar {
+.navbar {
     z-index: 98;
     position: fixed;
     margin-left: 80vw;
@@ -78,24 +78,24 @@ h1 {
     vertical-align: middle;
 }
 
-#navbar li {
+.navbar li {
     display: block;
     padding-left: 0.4em;
     border-left: 3px solid #fff;
 }
 
-#navbar li:hover {
+.navbar li:hover {
     cursor: pointer;
     font-weight: bold;
 }
 
-#navbar a {
+.navbar a {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
 }
 
-#tonext {
+.tonext {
     position: fixed;
     margin-left: 70vw;
     margin-top: 15vh;
@@ -109,7 +109,7 @@ h1 {
     transition: transform 500ms, opacity 500ms, width 500ms, height 500ms, padding 500ms, -webkit-transform 500ms;
 }
 
-#tonext:hover {
+.tonext:hover {
     opacity: .6;
     width: 58px;
     height: 58px;
