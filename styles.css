@@ -95,7 +95,11 @@ h1 {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 .arrowButton {
+=======
+.tonext {
+>>>>>>> c796d8f7e0f70adb2394a93a852819f38d6a6bab
     position: fixed;
     margin-left: 70vw;
     margin-top: 15vh;
@@ -109,7 +113,11 @@ h1 {
     transition: transform 500ms, opacity 500ms, width 500ms, height 500ms, padding 500ms, -webkit-transform 500ms;
 }
 
+<<<<<<< HEAD
 .arrowButton:hover {
+=======
+.tonext:hover {
+>>>>>>> c796d8f7e0f70adb2394a93a852819f38d6a6bab
     opacity: .6;
     width: 58px;
     height: 58px;
