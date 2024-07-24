@@ -77,11 +77,11 @@ h1 {
 }
 
 .u1 {
-    background-image: url('bg/red-yellow.png');
+    background-image: url('bg/magenta-orange.png');
 }
 
 .u2 {
-    background-image: url('bg/orange-teal.png');
+    background-image: url('bg/blue-teal.png');
 }
 
 .u3 {
@@ -89,11 +89,11 @@ h1 {
 }
 
 .u4 {
-    background-image: url('bg/red-blue.png');
+    background-image: url('bg/red-teal.png');
 }
 
 .u5 {
-    background-image: url('bg/red-teal.png');
+    background-image: url('bg/red-blue.png');
 }
 
 .f1 {
