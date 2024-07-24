@@ -6,7 +6,8 @@
 
 html,
 body {
-    background: #525093;
+    /* background-image: url('bg/bg1.png'); */
+    background-size: contain;
     color: #fff;
     font-family: 'Quicksand', sans-serif;
     -webkit-transition: all .7s;
@@ -44,16 +45,55 @@ h1 {
     padding-top: 20vh;
     width: 50vw;
     margin-left: 10vw;
+    font-size: 1.2em;
+    line-height: 1.6em;
 }
 
-.overlay {
+.content p {
+    margin-top: 2em;
+}
+
+.overlay,
+.underlay {
     position: absolute;
-    z-index: 99;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.overlay {
+    z-index: 99;
     background: #333;
+}
+
+.underlay {
+    z-index: -1;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    background-size: cover;
+}
+
+.u1 {
+    background-image: url('bg/red-yellow.png');
+}
+
+.u2 {
+    background-image: url('bg/orange-teal.png');
+}
+
+.u3 {
+    background-image: url('bg/indigo-yellow.png');
+}
+
+.u4 {
+    background-image: url('bg/red-blue.png');
+}
+
+.u5 {
+    background-image: url('bg/red-teal.png');
 }
 
 .f1 {
