@@ -35,10 +35,15 @@ $(document).on("scroll", function () {
 $(document).ready(function () {
   $(".overlay").fadeOut();
   $(".underlay").not(".u1").hide();
+  setTimeout(function() {
+    $("html, body").animate({ scrollTop: 50 }, 750);
+  }, 150);
+  $(".arrowButton").addClass("arrowPulse");
 
   // scroll when clicking on arrow
 
   $(".arrowButton").click(function () {
+    $(this).removeClass("arrowPulse");
     if ($(document).scrollTop() < $(".f2").position().top) {
       scrollOnClick(".c2");
     } else if ($(document).scrollTop() < $(".f3").position().top) {
