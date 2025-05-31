@@ -2,100 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Changing background color on scroll</title>
+    <title>Landing page</title>
+    <link />
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Quicksand"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=block"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
   </head>
 
   <body>
-    <div class="overlay"></div>
-    <div class="underlay u1"></div>
-    <div class="underlay u2"></div>
-    <div class="underlay u3"></div>
-    <div class="underlay u4"></div>
-    <div class="underlay u5"></div>
-    <!-- <ul class="navbar">
-      <li>Home</li>
-      <li>About</li>
-      <li>Login</li>
-      <li>Browse</li>
-      <li>Contact</li>
-    </ul> -->
-    <img src="arrow.png" alt="arrow" class="arrowButton" />
-    <div class="frame f1 viewing" data-bg="1">
-      <div class="content c1">
-        <h1>Frame one</h1>
+
+    <section class="panel" id="landing" data-at="landing">
+      <nav class="nav-full">
+        <a data="at-landing" href="#landing" class="active-navlink">Home</a>
+        <a data="at-info" href="#info">Info</a>
+        <a data="at-give" href="#give">Give</a>
+        <a data="at-subscribe" href="#subscribe">Subscribe</a>
+      </nav>
+      <div>
+        <h1 id="vanishingText">Magic scrolling colours</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-          tempora ut unde! Explicabo, obcaecati pariatur deserunt eum. Enim
-          exercitationem tempora nam ducimus cumque odit suscipit asperiores
-          omnis saepe aperiam voluptatibus minima fugiat aliquam officiis
-          aspernatur, dolores odio ipsam at quisquam non eveniet incidunt
-          laudantium!
+          Scroll to animate the background colour of the body as a full height panel
+          becomes visible.
+        </p>
+        <p>
+          I have tried to comment the code, particurly the JavaScript, as much as
+          possible. I hope it's clear to understand.
         </p>
       </div>
-    </div>
-    <div class="frame f2" data-bg="2">
-      <div class="content c2">
-        <h1>Frame two</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-          perspiciatis dicta saepe similique aliquid id, omnis,nesciunt nulla
-          dolorum ab iustoadipisci recusandae incidunt magnam voluptates totam
-          hic vel iure excepturi. Fuga eligendi tempore repellat explicabo,
-          quibusdam ea. Asperiores similique voluptatibus dignissimos
-          reprehenderit.
-        </p>
-      </div>
-    </div>
-    <div class="frame f3" data-bg="3">
-      <div class="content c3">
-        <h1>Frame three</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum,
-          esse delectus corrupti. At impedit est fugit quisquam dolorem quis
-          minima, eum. Magnam ipsum qui sed fugit iure quae blanditiis
-          reiciendis, commodi totam repellat nemo itae dignissimos alias
-          ratione, accusantium soluta, quisquam.
-        </p>
-      </div>
-    </div>
-    <div class="frame f4" data-bg="4">
-      <div class="content c4">
-        <h1>Frame four</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aliquam
-          doloribus excepturi molestias officia vel provident dolor odio
-          aspernatur qui magni perferendis veniam voluptatibus fugit itaque
-          eveniet et consectetur soluta voluptatem, periam illum. Sequi
-          inventore numquam eius iste adipisci, consequatur, laboriosam
-          assumenda incidunt a dicta cumque aliquid!
-        </p>
-      </div>
-    </div>
-    <div class="frame f5" data-bg="5">
-      <div class="content c5">
-        <h1>Frame five</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quis
-          dolores ratione sunt, doloribus minus consectetur, totam deleniti
-          eaque eligendi temporibus optio a reiciendis mollitia, excepturi
-          beatae, obcaecati quisquam quasi tenetur ut. Quidem a labore aliquam,
-          debitis veritatis nihil impedit explicabo numquam totam reprehenderit
-          quibusdam libero neque, natus, dicta itaque quod temporibus est nulla
-          non sunt voluptate et nesciunt tenetur?
-        </p>
-      </div>
-    </div>
+    </section>
+
+    <section class="panel" id="info" data-at="info"></section>
+    <section class="panel" id="give" data-at="give"></section>
+    <section class="panel" id="subscribe" data-at="subscribe"></section>
 
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery.min.js"
     ></script>
     <!-- <script type="text/javascript" src="jquery.js"></script> -->
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="components.js"></script>
+    <script type="text/javascript" src="transitions.js"></script>
   </body>
 </html>
