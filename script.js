@@ -33,7 +33,8 @@ $(document).on("scroll", function () {
 });
 
 $(document).ready(function () {
-  $(".overlay").fadeOut();
+  $(".bg-images").load("./bg-images.html")
+  // $(".overlay").fadeOut();
   $(".underlay").not(".u1").hide();
   setTimeout(function() {
     $("html, body").animate({ scrollTop: 50 }, 750);
